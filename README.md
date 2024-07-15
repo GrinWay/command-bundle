@@ -160,7 +160,7 @@ when@dev:
             grin_way_command.dev_logger:
                 type:           rotating_file
                 max_files:      1
-                path:           "%kernel.logrin_way_dir%/grin_way_command_%kernel.environment%.log"
+                path:           "%kernel.logs_dir%/grin_way_command_%kernel.environment%.log"
                 level:          debug
                 channels:       ["grin_way_command.dev_logger"]
 ###< TODO: REALIZE IT IN YOUR monolog.yaml ###
