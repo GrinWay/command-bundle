@@ -281,12 +281,12 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
 
         protected function configure(): void
         {
-            $this-><methodName>(
-                name:           <NAME>,
-                default:        <PROPERTY>,
-                description:    <DESCRIPTION>,
+            $this->METHOD_NAME(
+                name:           NAME,
+                default:        PROPERTY,
+                description:    DESCRIPTION,
                 mode:           InputOption::<CONSTANT>,
-                shortcut:       <SHORTCUT>,
+                shortcut:       SHORTCUT,
             );
         }
     */
@@ -330,10 +330,10 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
 
         protected function configure(): void
         {
-            $this-><methodName>(
-                name:           <NAME>,
-                mode:           InputArgument::<CONSTANT>,
-                description:    <DESCRIPTION>,
+            $this->METHOD_NAME(
+                name:           NAME,
+                mode:           InputArgument::CONSTANT,
+                description:    DESCRIPTION,
             );
         }
     */
@@ -372,13 +372,13 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
 
         protected function initialize(): void
         {
-            $this-><methodName>(
-                input:          <InputInterface object>,
-                output:         <OutputInterface object>,
-                name:           <NAME>,
-                option:         $this-><OPTION>,
-                predicat:       <predicat CALLABLE>,
-                set:            <set CALLABLE>,
+            $this->METHOD_NAME(
+                input:          InputInterface,
+                output:         OutputInterface,
+                name:           NAME,
+                option:         $this->OPTION,
+                predicat:       CALLABLE,
+                set:            CALLABLE,
             );
         }
     */
@@ -408,13 +408,13 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
 
         protected function initialize(): void
         {
-            $this-><methodName>(
-                input:          <InputInterface object>,
-                output:         <OutputInterface object>,
-                name:           <NAME>,
-                argument:       $this-><ARGUMENT>,
-                predicat:       <predicat CALLABLE>,
-                set:            <set CALLABLE>,
+            $this->METHOD_NAME(
+                input:          InputInterface,
+                output:         OutputInterface,
+                name:           NAME,
+                argument:       $this->ARGUMENT,
+                predicat:       CALLABLE,
+                set:            CALLABLE,
             );
         }
     */

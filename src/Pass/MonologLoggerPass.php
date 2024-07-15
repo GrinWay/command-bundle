@@ -17,7 +17,7 @@ use GrinWay\Command\GrinWayCommandExtension;
 
 class MonologLoggerPass implements CompilerPassInterface
 {
-    public const GRIN_WAY_COMMAND_DEV_LOGGER_ID = 'monolog.handler.grin_way_command.dev_logger';
+    public const GrinWay_COMMAND_DEV_LOGGER_ID = 'monolog.handler.grin_way_command.dev_logger';
 
     public function __construct()
     {
@@ -33,7 +33,7 @@ class MonologLoggerPass implements CompilerPassInterface
     private function resetDevLoggerWhenAppEnvIsNotDev(
         ContainerBuilder $container,
     ): void {
-        if (!$container->hasDefinition(self::GRIN_WAY_COMMAND_DEV_LOGGER_ID)) {
+        if (!$container->hasDefinition(self::GrinWay_COMMAND_DEV_LOGGER_ID)) {
             return;
         }
 
@@ -50,7 +50,7 @@ class MonologLoggerPass implements CompilerPassInterface
         if ($appEnv == 'prod') {
             /* reset with null: 'monolog.handler.null_internal' */
             $container->setAlias(
-                self::GRIN_WAY_COMMAND_DEV_LOGGER_ID,  # this service
+                self::GrinWay_COMMAND_DEV_LOGGER_ID,  # this service
                 'monolog.handler.null_internal', # points to this service
             );
         }

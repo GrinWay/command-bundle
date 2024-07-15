@@ -1,8 +1,8 @@
 parameters:
     ###> DEFAULT ###
     
-    env(GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE): '1'
-    grin_way_command.display_init_help: '%env(bool:GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE)%'
+    env(GrinWay_COMMAND_DISPLAY_INIT_HELP_MESSAGE): '1'
+    grin_way_command.display_init_help: '%env(bool:GrinWay_COMMAND_DISPLAY_INIT_HELP_MESSAGE)%'
     
     grin_way_command.progress_bar_spin:
         -    " ⠋"
@@ -78,11 +78,11 @@ parameters:
         -    "⠀⢀"
         
     ###< DEFAULT ###
-    env(GRIN_WAY_COMMAND_PATH_TO_PDF_CONVERTER): '%kernel.project_dir%/public/bundles/grinwaycommand/exec/docto.exe'
-    grin_way_command.path_to_pdf_converter: '%env(grin_way_env_normalize_path:grin_way_env_is_exists_file:grin_way_env_is_absolute_path:resolve:GRIN_WAY_COMMAND_PATH_TO_PDF_CONVERTER)%'
+    env(GrinWay_COMMAND_PATH_TO_PDF_CONVERTER): '%kernel.project_dir%/public/bundles/grinwaycommand/exec/docto.exe'
+    grin_way_command.path_to_pdf_converter: '%env(grin_way_env_normalize_path:grin_way_env_is_exists_file:grin_way_env_is_absolute_path:resolve:GrinWay_COMMAND_PATH_TO_PDF_CONVERTER)%'
     
-    env(GRIN_WAY_COMMAND_PATH_TO_NIRCMD):   '%kernel.project_dir%/public/bundles/grinwaycommand/exec/nircmd.exe'
-    grin_way_command.path_to_nircmd:         '%env(grin_way_env_normalize_path:grin_way_env_is_exists_path:grin_way_env_is_exists_file:resolve:GRIN_WAY_COMMAND_PATH_TO_NIRCMD)%'
+    env(GrinWay_COMMAND_PATH_TO_NIRCMD):   '%kernel.project_dir%/public/bundles/grinwaycommand/exec/nircmd.exe'
+    grin_way_command.path_to_nircmd:         '%env(grin_way_env_normalize_path:grin_way_env_is_exists_path:grin_way_env_is_exists_file:resolve:GrinWay_COMMAND_PATH_TO_NIRCMD)%'
 
 services:
     _defaults:
