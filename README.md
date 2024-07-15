@@ -85,19 +85,19 @@ $this->progressBar->start();
 
 | IODumpers |
 | ------------- |
-| [CautionIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/CautionIODumper.php) |
-| [CommentIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/CommentIODumper.php) |
-| [DefaultIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/DefaultIODumper.php) |
-| [ErrorIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/ErrorIODumper.php) |
-| [FormattedIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/FormattedIODumper.php) |
-| [InfoIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/InfoIODumper.php) |
-| [ListingIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/ListingIODumper.php) |
-| [NoteIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/NoteIODumper.php) |
-| [SectionIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/SectionIODumper.php) |
-| [SuccessIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/SuccessIODumper.php) |
-| [TextIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/TextIODumper.php) |
-| [TitleIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/TitleIODumper.php) |
-| [WarningIODumper](https://github.com/GrinWay/command-bundle/blob/v1/src/Contracts/IO/WarningIODumper.php) |
+| [CautionIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/CautionIODumper.php) |
+| [CommentIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/CommentIODumper.php) |
+| [DefaultIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/DefaultIODumper.php) |
+| [ErrorIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/ErrorIODumper.php) |
+| [FormattedIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/FormattedIODumper.php) |
+| [InfoIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/InfoIODumper.php) |
+| [ListingIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/ListingIODumper.php) |
+| [NoteIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/NoteIODumper.php) |
+| [SectionIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/SectionIODumper.php) |
+| [SuccessIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/SuccessIODumper.php) |
+| [TextIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/TextIODumper.php) |
+| [TitleIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/TitleIODumper.php) |
+| [WarningIODumper](https://github.com/GrinWay/command-bundle/blob/main/src/Contracts/IO/WarningIODumper.php) |
 
 ### Initial state of the AbstractCommand
 
