@@ -6,7 +6,7 @@ grin_way_command:
         exit_shortcut: "Для немедленного прекращения любой команды нажми сочетание клавиш: \"Ctrl + C\""
         how_to_change_lang: 'Чтобы изменить язык, допустим на английский, создай по пути "%bundle_config_path%" файл "%env_local_filename%" и напиши с новой строчки: %lang_example%'
         how_to_change_default_behaviour: 'Сравнив то, что написанно разработчиком в "%env_pathname%" можно понять, что Вы можете переопределить в "%env_local_pathname%"'
-        i_want_to_remove_init_description: "Чтобы скрыть это вспомогательное сообщение по пути: \"%bundle_config_path%\" создай файл \"%env_local_filename%\" и запиши с новой строчки: GrinWay_COMMAND_DISPLAY_INIT_HELP_MESSAGE=0"
+        i_want_to_remove_init_description: "Чтобы скрыть это вспомогательное сообщение по пути: \"%bundle_config_path%\" создай файл \"%env_local_filename%\" и запиши с новой строчки: GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE=0"
         
     exception:
         type: 'Передан неверный тип "%given_type%", ожидается "%expected_type%"'

@@ -38,7 +38,7 @@ class Configuration implements ConfigurationInterface
 
                 ->booleanNode(GrinWayCommandExtension::DISPLAY_INIT_HELP)
                     ->info('Display to user init help information of this bundle')
-                    ->defaultValue('%env(bool:GrinWay_COMMAND_DISPLAY_INIT_HELP_MESSAGE)%')
+                    ->defaultValue('%env(bool:GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE)%')
                 ->end()
 
                 ->arrayNode(GrinWayCommandExtension::PROGRESS_BAR_SPIN)
