@@ -1,0 +1,92 @@
+grin_way_command:
+    
+    init_help:
+        description_of_flag: 'Отобразить вспомогательную информацию?'
+        init_description: "Ознакомься:"
+        exit_shortcut: "Для немедленного прекращения любой команды нажми сочетание клавиш: \"Ctrl + C\""
+        how_to_change_lang: 'Чтобы изменить язык, допустим на английский, создай по пути "%bundle_config_path%" файл "%env_local_filename%" и напиши с новой строчки: %lang_example%'
+        how_to_change_default_behaviour: 'Сравнив то, что написанно разработчиком в "%env_pathname%" можно понять, что Вы можете переопределить в "%env_local_pathname%"'
+        i_want_to_remove_init_description: "Чтобы скрыть это вспомогательное сообщение по пути: \"%bundle_config_path%\" создай файл \"%env_local_filename%\" и запиши с новой строчки: GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE=0"
+        
+    exception:
+        type: 'Передан неверный тип "%given_type%", ожидается "%expected_type%"'
+    
+    
+    command_word: 'Команда'
+    already_triggered: 'уже запущена'
+    
+    from_word: 'из'
+    directory_word: 'директории'
+    
+    command:
+    
+        drive: диск
+    
+        nowd:
+            description: "Меняет у указанного файла дату создания и модификации на текущую дату ПК (зависит от места открытия консоли)"
+    
+        pdf:
+            description: "Преобразовать .doc .docx файлы в .pdf формат (зависит от места открытия консоли)"
+    
+        show:
+            description: "Показать непустые папки в каталоге"
+        
+        default:
+            exit: 'Выход'
+            is_ok: 'Ok?'
+        
+        shutdown: 'Команда "%command%" остановлена'
+        exit_disagree: 'Выход, пользователь не дал согласия'
+    
+    convertor:
+        converted:      'Преобразован'
+        not_converted:  'Не преобразован'
+        is_dump_converting_info:   'Отображать информацию о преобразовании?'
+        there_is_no_newer_file_for_converting: 'Нет более ногвого файла для преобразования в "%ext%"'
+        there_is_no_newer_files_for_converting: 'Нет более новых файлов для преобразования в "%ext%"'
+        have_not_been_converted: 'Не преобразовался в "%ext%"'
+    
+    trait:
+    
+        pattern_able_one_three_replacement:
+            description: 'Всевозможные человекопонятные комбинации трёх частей'
+            first_part_for_display: 'первая часть'
+            second_part_for_display: 'вторая часть'
+            third_part_for_display: 'третья часть'
+            have_not_passed: 'не передан'
+    
+        constructed_from_to_trait:
+            will_be_executed_word: 'Будет выполнено'
+            have_not_been_deleted: 'Не удалены'
+            have_been_deleted: 'Удалены'
+            deleting_process: 'Процесс удаления'
+            delete_word: 'Удалить'
+            from_word: 'из'
+            directory_word: 'папки'
+    
+        pattern_able_trait:
+            string_like_word: 'Строка наподобии'
+        
+        convert_trait:
+            cancel_converting: 'Отмена преобразования'
+            didn_not_convert: 'не выполнила преобразование'
+    
+        override_able:
+            description: '!ОПАСНЫЙ ФЛАГ! Перезаписывать даже более новые файлы'
+            ask_description: 'Спрашивать об уверенности перезаписи'
+            confirm_ask: 'Перезаписать даже более новые файлы?'
+            
+        move_able:
+            description: 'Переместить вместо копирования'
+            
+        make_lock_able:
+            description: 'Запретить одновременное выполнение одной и той же команды'
+            
+        dump_info_able:
+            description: 'Показывать информацию о выполнении программы?'
+            
+        depth_able:
+            description: 'Глубина сканирования файлов: (>= 1, <= 0, == 2, >= 1, == 2)'
+            
+        ask_able:
+            description: 'Спрашивать "ок"?'

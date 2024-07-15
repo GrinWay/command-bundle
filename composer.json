@@ -1,0 +1,42 @@
+{
+    "name": "grinway/command-bundle",
+    "autoload": {
+        "psr-4": {
+            "GrinWay\\Command\\": "src/"
+        }
+    },
+	"version":		"1.1.1",
+    "type":			"symfony-bundle",
+    "description":	"Commands for extending into Symfony Application.",
+    "authors": [
+        {
+            "name":			"Grigory Koblitskiy",
+			"email":		"grin180898@mail.ru"
+        }
+    ],
+    "keywords": ["grinway", "command-bundle"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7",
+        "symfony/translation": ">=6",
+        "symfony/monolog-bundle": ">=2",
+		"grinway/service-bundle": ">=1",
+		"grinway/env-processor-bundle": ">=1",
+        "symfony/property-access": ">=6",
+        "symfony/string": ">=6",
+        "symfony/config": ">=6",
+        "nesbot/carbon": ">=2",
+        "symfony/finder": ">=6",
+        "symfony/filesystem": ">=6"
+    },
+    "repositories": [
+		{
+			"type": "path",
+			"url": "./bundles/grinway/service-bundle"
+		},
+		{
+			"type": "path",
+			"url": "./bundles/grinway/env-processor-bundle"
+		}
+	]
+}

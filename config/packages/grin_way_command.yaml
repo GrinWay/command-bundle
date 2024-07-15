@@ -1,0 +1,16 @@
+grin_way_command:
+
+    display_init_help: '%grin_way_command.display_init_help%'
+    
+    #https://raw.githubusercontent.com/sindresorhus/cli-spinners/master/spinners.json
+    progress_bar_spin:
+    -    ⠋
+    -    ⠙
+    -    ⠹
+    -    ⠸
+    -    ⠼
+    -    ⠴
+    -    ⠦
+    -    ⠧
+    -    ⠇
+    -    ⠏

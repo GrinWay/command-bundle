@@ -1,0 +1,4 @@
+monolog:
+    channels:
+    # service: @monolog.logger.grin_way_command.dev_logger
+    -   "grin_way_command.dev_logger"

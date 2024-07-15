@@ -1,0 +1,90 @@
+grin_way_command:
+    exception:
+        type: 'Was given an incorrect type "%given_type%", expected "%expected_type%"'
+    
+    init_help:
+        description_of_flag: 'Should it display supporting information?'
+        init_description: "Must know:"
+        exit_shortcut: "To exit straight away just push this combination: \"Ctrl + C\""
+        how_to_change_lang: 'To change the language, for example to English, by a path "%bundle_config_path%" create the file "%env_local_filename%" and write down with a new line: %lang_example%'
+        how_to_change_default_behaviour: "Having compared what's been wrote by developer in the \"%env_pathname%\" file you can understand what you can overwrite in the \"%env_local_pathname%\" file"
+        i_want_to_remove_init_description: "To hide this message by the path: \"%bundle_config_path%\" create the file \"%env_local_filename%\" and write down the following with a new line: GRIN_WAY_COMMAND_DISPLAY_INIT_HELP_MESSAGE=0"
+        
+    command_word: 'Command'
+    already_triggered: 'has already triggered'
+    
+    from_word: 'from'
+    directory_word: 'directory'
+    
+    command:
+    
+        drive: 'drive'
+    
+        nowd:
+            description: "Changes the creation and modification date of the specified file to the current PC date (depends on where the console is opened)"
+    
+        pdf:
+            description: "Converts .doc .docx files in .pdf format (depends on where the console is opened)"
+    
+        show:
+            description: "Shows non-empty folders in the directory"
+
+        default:
+            exit: 'Exit'
+            is_ok: 'Ok?'
+        
+        shutdown: 'The command "%command%" was stopped'
+        exit_disagree: 'Exit, the user turned down'
+    
+    convertor:
+        converted:      'Converted'
+        not_converted:  'Not converted'
+        is_dump_converting_info:   'Display conversion information?'
+        there_is_no_newer_file_for_converting: 'There is no newer file to convert into "%ext%"'
+        there_is_no_newer_files_for_converting: 'There is no newer files to convert into "%ext%"'
+        have_not_been_converted: 'Not converted into "%ext%"'
+        
+    trait:
+    
+        pattern_able_one_three_replacement:
+            description: 'All kinds of human-understandable combinations of the three parts'
+            first_part_for_display: 'first part'
+            second_part_for_display: 'second part'
+            third_part_for_display: 'third part'
+            have_not_passed: 'have not passed'
+    
+        constructed_from_to_trait:
+            will_be_executed_word: 'Will be executed'
+            have_not_been_deleted: 'Have not been deleted'
+            have_been_deleted: 'Have been deleted'
+            deleting_process: 'Removing process'
+            delete_word: 'Remove'
+            from_word: 'from'
+            directory_word: 'directory'
+    
+        pattern_able_trait:
+            string_like_word: 'String like'
+            
+        convert_trait:
+            cancel_converting: 'Cancel converting'
+            didn_not_convert: 'has not converted'
+            
+        override_able:
+            description: '!DANGEROUS FLAG! Overwrite even newer files'
+            ask_description: 'Ask about overwriting confidence'
+            confirm_ask: 'Overwrite even newer files?'
+            
+        move_able:
+            description: 'Move instead of copying'
+            
+        make_lock_able:
+            description: 'Prohibit simultaneous execution of the same command'
+            
+        dump_info_able:
+            description: 'Show information about program execution?'
+            
+        depth_able:
+            description: 'File scanning depth: (>= 1, <= 0, == 2, >= 1, == 2)'
+            
+        ask_able:
+            description: 'Do ask "ok"?'
