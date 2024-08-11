@@ -4,6 +4,8 @@ namespace GrinWay\Command\Command;
 
 use function Symfony\Component\String\u;
 
+use Symfony\Component\Console\Helper\FormatterHelper;
+use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Contracts\Service\Attribute\Required;
 use Symfony\Component\Finder\Finder;
@@ -23,7 +25,6 @@ use Symfony\Component\Console\Command\{
 };
 use Symfony\Component\Console\Helper\{
     ProgressBar,
-    FormatterHelper,
     Table,
     TableStyle,
     TableSeparator
@@ -833,6 +834,9 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
         InputInterface $input,
         OutputInterface $output,
     ): void {
+		$this->setHelperSet(new HelperSet([
+			'formatter' => new FormatterHelper(),
+		]));
         $this->formatter = $this->getHelper('formatter');
     }
 
