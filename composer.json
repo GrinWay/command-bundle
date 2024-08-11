@@ -5,7 +5,7 @@
             "GrinWay\\Command\\": "src/"
         }
     },
-	"version":		"1.1.1",
+	"version":		"1.2.0",
     "type":			"symfony-bundle",
     "description":	"Commands for extending into Symfony Application.",
     "authors": [

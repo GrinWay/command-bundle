@@ -27,17 +27,17 @@ abstract class AbstractIODumper
 					$io,
 					$this->getNormalizedMessage($m),
 				);
-				
-				$afterDumpNewLines = $this->afterDumpNewLines;
-				while($afterDumpNewLines-- > 0) {
-					$io->writeln('');
-				}
 			}
 		} else {
 			$this->dump(
 				$io,
 				$this->getNormalizedMessage($message),
 			);			
+		}
+		
+		$afterDumpNewLines = $this->afterDumpNewLines;
+		while(0 < $afterDumpNewLines--) {
+			$io->writeln('');
 		}
 		
 		if ($flush) {

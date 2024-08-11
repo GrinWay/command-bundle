@@ -504,7 +504,6 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
     ) {
         $message = $this->t->trans($message);
 
-		//BufferService::clear();
         $agree = $this->io->askQuestion(
             new ConfirmationQuestion(
                 \is_array($message) ? \implode(\PHP_EOL, $message) : $message,
