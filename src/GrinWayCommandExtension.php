@@ -57,7 +57,7 @@ class GrinWayCommandExtension extends ConfigurableExtension implements PrependEx
 
     public function loadInternal(array $config, ContainerBuilder $container): void
     {
-        $this->fillInParameters($config, $container);
+		$this->fillInParameters($config, $container);
         $this->fillInServiceArgumentsWithConfigOfCurrentBundle($config, $container);
         $this->registerBundleTagsForAutoconfiguration($container);
     }

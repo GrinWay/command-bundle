@@ -32,15 +32,8 @@ class GrinWayCommandBundle extends Bundle
     {
         parent::build($container);
 
-        $container
-            /*
-            ->addCompilerPass(
-                new MonologLoggerPass(),
-                //type: PassConfig::TYPE_AFTER_REMOVING,
-            )
-            */
-        ;
-    }
+		$container->addCompilerPass(new MonologLoggerPass());
+	}
 
     public function getContainerExtension(): ?ExtensionInterface
     {

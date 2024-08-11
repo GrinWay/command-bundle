@@ -33,21 +33,11 @@ class MonologLoggerPass implements CompilerPassInterface
     private function resetDevLoggerWhenAppEnvIsNotDev(
         ContainerBuilder $container,
     ): void {
-        if (!$container->hasDefinition(self::GRIN_WAY_COMMAND_DEV_LOGGER_ID)) {
+		if (!$container->hasDefinition('monolog.logger.grin_way_command.dev_logger')) {
             return;
         }
 
-        /*
-            получить DYNAMIC env(<>) в проходе компилятора НЕВОЗМОЖНО!
-        */
-        $appEnv = $container->getParameter(
-            ServiceContainer::getParameterName(
-                GrinWayCommandExtension::PREFIX,
-                GrinWayCommandExtension::APP_ENV,
-            )
-        );
-
-        if ($appEnv == 'prod') {
+        if ('dev' !== $container->getParameter('kernel.environment')) {
             /* reset with null: 'monolog.handler.null_internal' */
             $container->setAlias(
                 self::GRIN_WAY_COMMAND_DEV_LOGGER_ID,  # this service

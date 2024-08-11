@@ -7,7 +7,7 @@ use function Symfony\Component\String\u;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Contracts\Service\Attribute\Required;
 use Symfony\Component\Finder\Finder;
-use Symfony\Bridge\Monolog\Logger;
+use Monolog\Logger;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Filesystem\Path;
@@ -78,8 +78,10 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
     public readonly string $grinWayCommandInitialCwd;
 
     public function __construct(
+		#[Autowire('@monolog.logger.grin_way_command.dev_logger')]
         protected readonly Logger $devLogger,
         protected readonly TranslatorInterface $t,
+		#[Autowire('%grin_way_command.progress_bar_spin%')]
         protected readonly array $progressBarSpin,
     ) {
         $this->grinWayCommandInitialCwd = Path::normalize(\getcwd());
@@ -670,7 +672,7 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
     protected function execute(
         InputInterface $input,
         OutputInterface $output,
-    ) {
+    ): int {
 		//###> BEFORE LOCK
 		$this->executeBeforeLock(
 			$input,
@@ -722,7 +724,7 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
     }
 
     /* SignalableCommandInterface */
-    public function handleSignal(int $signal): void
+    public function handleSignal(int $signal, int|false $previousExitCode = 0): int|false
     {
         /*
         if (\SIGINT == $signal) {
