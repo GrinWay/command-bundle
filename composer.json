@@ -27,6 +27,7 @@
         "symfony/config": ">=6",
         "nesbot/carbon": ">=2",
         "symfony/finder": ">=6",
+        "symfony/lock": ">=6",
         "symfony/filesystem": ">=6"
     },
     "repositories": [
