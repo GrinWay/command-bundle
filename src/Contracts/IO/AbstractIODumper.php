@@ -15,7 +15,7 @@ abstract class AbstractIODumper
 	public function __invoke(
 		SymfonyStyle &$io,
 		mixed $message,
-		bool $flush = true,
+		bool $flush = false,
 	): static {
 		if ($this->isSkip($message)) {
 			return $this;
