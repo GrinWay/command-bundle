@@ -35,7 +35,7 @@ trait AbstractCommandTrait
     abstract protected function execute(
         InputInterface $input,
         OutputInterface $output,
-    ): int;
+    );
 
     //###< ABSTRACT ###
 }
