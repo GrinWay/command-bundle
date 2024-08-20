@@ -724,7 +724,7 @@ abstract class AbstractCommand extends AbstractCommandUseTrait
     }
 
     /* SignalableCommandInterface */
-    public function handleSignal(int $signal, int|false $previousExitCode = 0): void
+    public function handleSignal(int $signal, int|false $previousExitCode = 0): int|false
     {
         /*
         if (\SIGINT == $signal) {
